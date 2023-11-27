@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513B8D172B14C61C00806A75 /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B8D162B14C61C00806A75 /* EditDestinationView.swift */; };
 		51CEFC572B0F1ECB0059D924 /* PracticeSwiftDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEFC562B0F1ECB0059D924 /* PracticeSwiftDataApp.swift */; };
 		51CEFC592B0F1ECB0059D924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEFC582B0F1ECB0059D924 /* ContentView.swift */; };
 		51CEFC5B2B0F1ECC0059D924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CEFC5A2B0F1ECC0059D924 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513B8D162B14C61C00806A75 /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 		51CEFC532B0F1ECB0059D924 /* PracticeSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CEFC562B0F1ECB0059D924 /* PracticeSwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSwiftDataApp.swift; sourceTree = "<group>"; };
 		51CEFC582B0F1ECB0059D924 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				51CEFC562B0F1ECB0059D924 /* PracticeSwiftDataApp.swift */,
 				51CEFC582B0F1ECB0059D924 /* ContentView.swift */,
+				513B8D162B14C61C00806A75 /* EditDestinationView.swift */,
 				51CEFC642B0F20BD0059D924 /* Destination.swift */,
 				51CEFC5A2B0F1ECC0059D924 /* Assets.xcassets */,
 				51CEFC5C2B0F1ECC0059D924 /* Preview Content */,
@@ -143,6 +146,7 @@
 				51CEFC592B0F1ECB0059D924 /* ContentView.swift in Sources */,
 				51CEFC572B0F1ECB0059D924 /* PracticeSwiftDataApp.swift in Sources */,
 				51CEFC652B0F20BD0059D924 /* Destination.swift in Sources */,
+				513B8D172B14C61C00806A75 /* EditDestinationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
