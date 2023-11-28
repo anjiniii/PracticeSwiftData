@@ -10,7 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
-    @Query var destinations: [Destination]
+    
+    // 이름의 알파벳 순서
+    @Query(sort: \Destination.name) var destinations: [Destination]
+    
+    // 우선순위의 역순
+    // @Query(sort: \Destination.priority, order: .reverse) var destinations: [Destination]
+    
+    // 여러 정렬 조건이 필요한 경우
+    // @Query(sort: [SortDescriptor(\Destination.priority, order: .reverse), SortDescriptor(\Destination.name)]) var destinations: [Destination]
+    
     @State private var path = [Destination]()
     
     var body: some View {
