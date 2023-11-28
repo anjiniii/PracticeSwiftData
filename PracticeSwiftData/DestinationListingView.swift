@@ -27,8 +27,27 @@ struct DestinationListingView: View {
         }
     }
     
+    /*
     init(sort: SortDescriptor<Destination>) {
-        _destinations = Query(sort: [sort])
+        let now = Date.now
+        
+        _destinations = Query(filter: #Predicate {
+            // 우선순위가 2 이상
+            // $0.priority >= 2
+            
+            // 날짜가 미래인 것만
+            $0.date > now
+        }, sort: [sort])}
+    */
+    
+    init(sort: SortDescriptor<Destination>, searchString: String) {
+        _destinations = Query(filter: #Predicate {
+            if searchString.isEmpty {
+                return true
+            } else {
+                return $0.name.localizedStandardContains(searchString)
+            }
+        }, sort: [sort])
     }
     
     func deleteDestinations(_ indexSet: IndexSet) {
@@ -40,5 +59,5 @@ struct DestinationListingView: View {
 }
 
 #Preview {
-    DestinationListingView(sort: SortDescriptor(\Destination.name))
+    DestinationListingView(sort: SortDescriptor(\Destination.name), searchString: "")
 }
